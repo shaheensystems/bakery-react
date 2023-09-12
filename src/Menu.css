@@ -1,0 +1,30 @@
+.menu h2 {
+    background-color: #f7e0b6;
+    padding: 5px 10px;
+    margin-top: 20px;
+  }
+  .menu .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    height: 100px;
+  }
+  .menu div{
+    max-width: 500px;
+    margin: 0 auto;
+
+  }
+  .menu button {
+    background-color: #774c2a;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .menu button:hover {
+    background-color: #60381f;
+  }
+  

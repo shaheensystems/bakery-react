@@ -1,0 +1,20 @@
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .product button {
+    background-color: #774c2a;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .product button:hover {
+    background-color: #60381f;
+  }
+  
