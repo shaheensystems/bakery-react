@@ -1,5 +1,6 @@
 import './Menu.css';
 import Product from './Product';
+import Newsletter from './Newsletter';
 const bakeryItems = [
     { id: 1, name: "Lamington", price: "$3", category: "Cakes" },
     { id: 2, name: "Pavlova", price: "$4.5", category: "Cakes" },
@@ -14,18 +15,17 @@ const bakeryItems = [
     const categories = [...new Set(bakeryItems.map(item => item.category))];
   
     return (
+        <>
       <div className="menu">
-        {categories.map(category => (
-          <div key={category}>
-            <h2>{category}</h2>
-            {bakeryItems
-              .filter(item => item.category === category)
-              .map(item => (
+        
+           { bakeryItems.map(item => (
                 <Product key={item.id} item={item} addToCart={addToCart} />
               ))}
-          </div>
-        ))}
+          
+        
       </div>
+      <Newsletter />
+      </>
     );
   }
   

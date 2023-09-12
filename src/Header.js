@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
-import './Header.css';
 
+import './Header.css';
+import {Link} from 'react-router-dom';
 function Header() {
     function toggleNav() {
         var x = document.getElementById("myTopnav");
@@ -14,7 +14,7 @@ function Header() {
     <header className="header">
       <h1>NZ Bakery</h1>
       <nav className="topnav" id="myTopnav">
-        <Link to="/">Home</Link>
+        <Link to="/" className=''>Home</Link>
         <Link to="/menu">Menu</Link>
         <Link to="/about">About Us</Link>
         <Link to="/contact">Contact</Link>

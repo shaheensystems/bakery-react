@@ -9,8 +9,8 @@ function Cart({ cartItems }) {
   return (
     <div className="cart">
         <p className="checkout-message">{checkoutMessage}</p>
-      {cartItems.map((item, index) => (
-        <p key={index}>{item.name} - {item.price}</p>
+      {cartItems.map((item) => (
+        <p key={item.id}>{item.name} - {item.price}</p>
       ))}
       {cartItems.length > 0 && (
         <button onClick={checkout}>Checkout</button>

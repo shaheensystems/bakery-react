@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import './Home.css';
+import Newsletter from './Newsletter';
 
 function Home() {
   return (
@@ -24,12 +25,7 @@ function Home() {
         <Link to="/about">Learn More</Link>
       </section>
 
-      <section className="newsletter">
-        <h2>Subscribe to Our Newsletter</h2>
-        <p>Stay updated with our latest offerings and promotions.</p>
-        <input type="email" placeholder="Enter your email" />
-        <button type="submit">Subscribe</button>
-      </section>
+        <Newsletter />
     </div>
   );
 }
