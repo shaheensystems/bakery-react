@@ -18,6 +18,7 @@ function Header() {
         <Link to="/menu">Menu</Link>
         <Link to="/about">About Us</Link>
         <Link to="/contact">Contact</Link>
+        <Link to="/custom">Custom Order</Link>
         <Link to="/cart">Cart</Link>
         <button class="icon" onClick={toggleNav}>
     <i class="fa fa-bars"></i>

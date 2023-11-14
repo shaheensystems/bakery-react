@@ -8,6 +8,7 @@ import AboutUs from './AboutUs';
 import Contact from './Contact';
 import { useState } from 'react';
 import {Routes, Route, Link} from 'react-router-dom';
+import CustomOrder from './CustomOrder';
 function App() {
   const [cart, setCart] = useState([]);
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/menu" element={ <Menu addToCart={addToCart} />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element ={<Contact />} />
+        <Route path="/custom" element ={<CustomOrder />} />
         <Route path="/cart" element ={<Cart cartItems={cart} />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
