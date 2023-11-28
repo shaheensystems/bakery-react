@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import './Home.css';
 import Newsletter from './Newsletter';
+import Pricing from './Pricing';
 
 function Home() {
   return (
@@ -26,6 +27,7 @@ function Home() {
       </section>
 
         <Newsletter />
+        <Pricing />
     </div>
   );
 }

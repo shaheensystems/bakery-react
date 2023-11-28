@@ -16,7 +16,7 @@
     margin: 0 auto;
 
   }
-  .menu button {
+  .menu .button {
     background-color: #774c2a;
     color: white;
     padding: 5px 10px;
@@ -24,7 +24,7 @@
     border-radius: 5px;
   }
   
-  .menu button:hover {
+  .menu .button:hover {
     background-color: #60381f;
   }
   

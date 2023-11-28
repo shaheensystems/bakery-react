@@ -7,7 +7,7 @@ import Menu from './Menu';
 import AboutUs from './AboutUs';
 import Contact from './Contact';
 import { useState } from 'react';
-import {Routes, Route, Link} from 'react-router-dom';
+import {Routes, Route, Link, BrowserRouter} from 'react-router-dom';
 function App() {
   const [cart, setCart] = useState([]);
 
@@ -16,7 +16,9 @@ function App() {
   };
   return (
     <>
+    <BrowserRouter>
       <Header />
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={ <Menu addToCart={addToCart} />} />
@@ -27,6 +29,7 @@ function App() {
       </Routes>
       
       <Footer />
+      </BrowserRouter>
     </>
   );
 }
